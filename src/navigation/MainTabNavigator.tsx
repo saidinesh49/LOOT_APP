@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MainTabParamList } from './types';
 import { COLORS } from '../theme/theme';
 
@@ -30,7 +30,7 @@ const MainTabNavigator = () => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="home" size={24} color={color} />
+            <MaterialCommunityIcons name="home" size={24} color={color} />
           ),
         }}
       />
@@ -39,7 +39,7 @@ const MainTabNavigator = () => {
         component={ExploreScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="compass" size={24} color={color} />
+            <MaterialCommunityIcons name="compass" size={24} color={color} />
           ),
         }}
       />
@@ -48,7 +48,7 @@ const MainTabNavigator = () => {
         component={LootScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="gift" size={24} color={color} />
+            <MaterialCommunityIcons name="gift" size={24} color={color} />
           ),
         }}
       />
@@ -57,7 +57,7 @@ const MainTabNavigator = () => {
         component={MarketScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="store" size={24} color={color} />
+            <MaterialCommunityIcons name="store" size={24} color={color} />
           ),
         }}
       />
@@ -66,7 +66,7 @@ const MainTabNavigator = () => {
         component={AccountScreen}
         options={{
           tabBarIcon: ({ color }) => (
-            <Icon name="account" size={24} color={color} />
+            <MaterialCommunityIcons name="account" size={24} color={color} />
           ),
         }}
       />
